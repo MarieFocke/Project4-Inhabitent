@@ -1,0 +1,31 @@
+footer {
+  .site-hours h3,
+  .site-info h3{
+     color: #d99054;
+  }
+  .site-info{
+    
+  }
+  .site-hours{
+   
+  }
+  .site-hours,
+  .site-info,
+  .image {
+    padding: 10px;
+    flex-wrap:wrap;
+  }
+  .image{
+      height:200px;
+      width:400px;
+  }
+  .copyright{
+    text-align: center;
+
+  }
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.75;
+  background-image: url(../../images/dark-wood.png);
+  height: 40%;
+}

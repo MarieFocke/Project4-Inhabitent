@@ -1,9 +1,9 @@
 /*!
-Theme Name: Inhabitent Theme
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
 Author: RED Academy
 Author URI: http://www.redacademy.com
-Description: Theme for project 4 at RED Academy students.
+Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -665,6 +665,41 @@ object {
 
 .gallery-caption {
   display: block; }
+
+footer {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.75;
+  background-image: url(../../images/dark-wood.png);
+  height: 40%; }
+  footer .site-hours h3,
+  footer .site-info h3 {
+    color: #d99054; }
+  footer .site-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  footer .site-hours {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  footer .site-hours,
+  footer .site-info,
+  footer .image {
+    padding: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  footer .image {
+    height: 200px;
+    width: 400px; }
+  footer .copyright {
+    text-align: center; }
+
+.site-main {
+  width: 150px;
+  height: 200px; }
 
 /*--------------------------------------------------------------
 # Page Templates
