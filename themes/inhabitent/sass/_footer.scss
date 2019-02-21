@@ -1,31 +1,37 @@
 footer {
-  .site-hours h3,
-  .site-info h3{
-     color: #d99054;
-  }
-  .site-info{
-    
-  }
-  .site-hours{
-   
-  }
-  .site-hours,
-  .site-info,
-  .image {
-    padding: 10px;
-    flex-wrap:wrap;
-  }
-  .image{
-      height:200px;
-      width:400px;
-  }
-  .copyright{
-    text-align: center;
-
-  }
   font-size: 16px;
   color: #ffffff;
   line-height: 1.75;
   background-image: url(../../images/dark-wood.png);
-  height: 40%;
+  height: 50%;
+  line-height: 1.75;
+  .general-info{
+    margin-left:150px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  h3 {
+    color: #d99054;
+  }
+  .site-info,
+  .site-hours {
+    margin-right: 60px;
+  }
+  .image{
+    margin-left:70px;
+    width: 400px;
+    height:200px;
+  img{
+    position: relative;
+    margin-left:100px;
+    width: 250px;
+    height:200px;
+  }
+  }
+}
+}
+.copyright {
+  text-align: center;
+  
 }

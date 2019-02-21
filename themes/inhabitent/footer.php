@@ -9,11 +9,14 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="general-info">
 				<div class="site-info">
 					<h3>Contact Info</h3>
-					<span>info@inhabitent.com</span>
+					<span><i class="fas fa-envelope"></i> info@inhabitent.com</span>
 					<br>
-					<span>778-456-7891</span>
+					<span><i class="fas fa-phone"></i> 778-456-7891</span>
+					<br>
+					<span><i class="fab fa-facebook-square"></i>  <i class="fab fa-twitter-square"></i>  <i class="fab fa-google-plus-square"></i></span>
 				</div>
 				<div class="site-hours">
 					<h3>Business Hours</h3>
@@ -25,6 +28,7 @@
 				</div>
 				<div class="image">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg" />
+				</div>
 				</div>
 				<div class="copyright">
 					<p class="done-by">
