@@ -50,10 +50,171 @@
 
 .site-main {
   .banner {
-    background-image: url(../../images/home-hero.jpg);
+    background: url(../../images/home-hero.jpg) no-repeat;
+    padding-top: 60px;
+    text-align: center;
     background-size: cover, cover;
     width: 100%;
-	height: 130vh;
-	align-items: center;
+    height: 100vh;
+  }
+}
+.journal{
+  .journal-posts{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+}
+.blog{
+
+  .widget-area{
+    width: 200px;
+    height: 200px;
+    flex-wrap: wrap;
+  }
+}
+
+.archive{
+  .hfeed{
+    .site-content{
+      .post-128{
+        width: 400px;
+        height: 400px;
+        padding: 10px;
+        flex-direction: column;
+      }
+      .post-126{
+        width: 400px;
+        height: 400px;
+        padding: 10px;
+        flex-direction: column;
+      }
+      .post-124{
+        width: 400px;
+        height: 400px;
+        padding: 10px;
+        flex-direction: column;
+      }
+      .post-122{
+        width: 400px;
+        height: 400px;
+        padding: 10px;
+        flex-direction: column;
+      }
+      .post-120{
+        width: 400px;
+        height: 400px;
+        padding: 10px;
+        flex-direction: column;
+      }
+      .post-118{
+        width: 400px;
+        height: 400px;
+        padding: 10px;
+        flex-direction: column;
+      }
+      .post-116{
+        width: 400px;
+        height: 400px;
+        padding: 10px;
+        flex-direction: column;
+      }
+      .post-114{
+        width: 400px;
+        height: 400px;
+        padding: 10px;
+        flex-direction: column;
+      }
+      .post-112{
+        width: 400px;
+        height: 400px;
+        padding: 10px;
+        flex-direction: column;
+      }
+      .post-96{
+        width: 400px;
+        height: 400px;
+        padding: 10px;
+        flex-direction: column;
+      }
+      
+    }
+  }
+}
+
+.site-content{
+  .content-area{
+    .site-main{
+      header h1 {
+        text-align: center;
+        text-transform: uppercase;
+        padding:50px;
+      }
+      .post-5 {
+        padding:20px;
+        text-align: center;
+        .img{
+          height: auto;
+          width:100%;
+        }
+        .entry-content{
+          padding:0px 330px;
+          text-align:justify;
+        }
+        
+      }
+      .post-45 {
+        padding:20px;
+        text-align: center;
+        .img{
+          height: auto;
+          width:100%;
+        }
+        .entry-content{
+          padding:0px 330px;
+          text-align:justify;
+        }
+        
+      }
+      .post-47 {
+        padding:20px;
+        text-align: center;
+        .img{
+          height: auto;
+          width:100%;
+        }
+        .entry-content{
+          padding:0px 330px;
+          text-align:justify;
+        }
+        
+      }
+      .post-50 {
+        padding:20px;
+        text-align: center;
+        .img{
+          height: auto;
+          width:100%;
+        }
+        .entry-content{
+          padding:0px 330px;
+          text-align:justify;
+        }
+        
+      }
+      .post-39 {
+        padding:20px;
+        text-align: center;
+        .img{
+          height: auto;
+          width:100%;
+        }
+        .entry-content{
+          padding:0px 330px;
+          text-align:justify;
+        }
+        
+      }
+    }
+
   }
 }

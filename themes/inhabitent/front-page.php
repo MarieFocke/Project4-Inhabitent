@@ -12,33 +12,24 @@ get_header(); ?>
             <div class="banner">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" />
             </div>
-            <!-- <div>
-                $args = array( 'hide_empty=0' );
-                    $terms = get_terms( 'my_term', $args );
-                    if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
-                        $count = count( $terms );
-                        $i = 0;
-                        $term_list = '<p class="my_term-archive">';
-                        foreach ( $terms as $term ) {
-                            $i++;
-                            $term_list .= '<a href="' . esc_url( get_term_link( $term ) ) . '" alt="' . esc_attr( sprintf( __( 'View all post filed under %s', 'my_localization_domain' ), $term->name ) ) . '">' . $term->name . '</a>';
-                            if ( $count != $i ) {
-                                $term_list .= ' &middot; ';
-                            }
-                            else {
-                                $term_list .= '</p>';
-                            }
-                        }
-                        echo $term_list;
-                    }
-            </div> -->
 			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content' ); ?>
-
-			<?php endwhile; ?>
-        </main><!-- #main -->
+                <?php get_template_part( 'template-parts/content' ); ?>
+            <?php endwhile; ?>
+        <section class="shop">
+            <div class="shop-menu">
+                <?php $product_items= get_terms( 'product_type' ); ?>
+                <?php foreach ( $product_items as $item ) : setup_postdata($item); ?>
+                    <div class="each-type">
+                        <img src=<?php echo get_template_directory_uri().'/images/product-type-icons/' . $item->slug . '.svg' ?>>
+                        <p><?php echo $item->description ?></p>
+                        <a href=<?php echo get_term_link($item)?>> <?php echo $item->nam ?> Articles</a>
+                    </div>
+                    <?php endforeach; wp_reset_postdata();?>
             <div>
+        </section>
+        <section class="journal">
+            <div class="journal-posts">
+                <h1>Inhabitent Journal</h1>
                 <?php $journal_posts = inhabitent_get_latest_posts(); ?>
                 <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
                     <div>
@@ -53,9 +44,9 @@ get_header(); ?>
                         wp_reset_postdata();
                         ?>
                     </div>
-
-                <section class="adventures containers">
-            </div>    
+            </div>
+        </section>
+        </main><!-- #main -->   
 
 <?php get_sidebar(); ?>
 
