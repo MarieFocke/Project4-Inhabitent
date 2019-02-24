@@ -5,12 +5,11 @@ header {
   margin: 10px 50px;
   background-color: transparent;
   .logo-image{
-    width: 70px;
-    height: 70px;
+    width: 50px;
   }
   .main-navigation{
   .search{
-    text-align: end;
+    
     border-color: transparent;
   }
   .menu-menu-1-container li a{
@@ -25,26 +24,31 @@ header {
   }
 }
 }
-header {
-  
-  margin: 10px 50px;
-  background-color: transparent;
-  .logo-image{
-    width: 70px;
-    height: 70px;
-  }
-  .main-navigation{
-  .search{
-    text-align: end;
-    border-color: transparent;
-  }
-  .menu-menu-1-container li a{
-    text-transform: uppercase;
-    color:#248A83;
-    padding:10px;
-    
-  }
-
-
-  }
+.archive{
+    .site-header {
+      border-bottom: 1px solid gray;
+      display: flex;
+      flex-direction: row;
+      margin: 10px;
+      background-color: transparent;
+      justify-items: space-between;
+      .logo-image{
+        width: 70px;
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+      .main-navigation{
+      .search{
+        border-color: transparent;
+        .search-field{
+          border: none;
+        }
+      }
+      .menu-menu-1-container li a{
+        text-transform: uppercase;
+        color:#248A83;
+        padding:10px; 
+      }
+      }
+    }
 }

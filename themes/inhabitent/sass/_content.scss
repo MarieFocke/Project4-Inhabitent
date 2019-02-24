@@ -75,6 +75,8 @@
 
 .archive{
   .hfeed{
+    flex-direction: row;
+        flex-wrap:wrap;
     .site-content{
       .post-128{
         width: 400px;
@@ -144,17 +146,22 @@
 .site-content{
   .content-area{
     .site-main{
+      text-align: center;
       header h1 {
         text-align: center;
         text-transform: uppercase;
         padding:50px;
       }
-      .post-5 {
+      .post {
         padding:20px;
         text-align: center;
-        .img{
-          height: auto;
-          width:100%;
+        flex-direction: row;
+        flex-wrap:wrap;
+        .head{
+          .img{
+            height: auto;
+            width:40%;
+          }
         }
         .entry-content{
           padding:0px 330px;
@@ -162,57 +169,15 @@
         }
         
       }
-      .post-45 {
-        padding:20px;
-        text-align: center;
-        .img{
-          height: auto;
-          width:100%;
-        }
-        .entry-content{
-          padding:0px 330px;
-          text-align:justify;
-        }
+      .products div a{
         
-      }
-      .post-47 {
-        padding:20px;
-        text-align: center;
-        .img{
-          height: auto;
-          width:100%;
-        }
-        .entry-content{
-          padding:0px 330px;
-          text-align:justify;
-        }
-        
-      }
-      .post-50 {
-        padding:20px;
-        text-align: center;
-        .img{
-          height: auto;
-          width:100%;
-        }
-        .entry-content{
-          padding:0px 330px;
-          text-align:justify;
-        }
-        
-      }
-      .post-39 {
-        padding:20px;
-        text-align: center;
-        .img{
-          height: auto;
-          width:100%;
-        }
-        .entry-content{
-          padding:0px 330px;
-          text-align:justify;
-        }
-        
+        text-decoration: none;
+        text-transform: uppercase;
+        color:#248A83;
+        padding:10px;
+
+          
+      
       }
     }
 

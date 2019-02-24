@@ -8,29 +8,31 @@
 get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+
 		<?php if ( have_posts() ) : ?>
+		<!-- <?php $product_types=get_terms ?> -->
 			<header class="page-header">
-				<?php the_archive_title( '<h1 class="page-title">', '</h1>' );?>
+				<h1> Shop Stuff</h1>
 			</header>
-	</div>
 	<section class="products">
 			<div>
-				<?php $products_types= get_terms('product_type'); ?>
-				<?php foreach ( $product_types as $product ) : setup_postdata( $product ); ?>
-                <div>
-					<a href=<?php echo get_term_link($product)?>> <?php echo $product->name?></a>
-				</div>
+				<?php $product_types = get_terms(array(
+					'taxonomy' => 'product_type',
+					'hide_empty' => 0,
+				)); ?>
+				<?php foreach ( $product_types as $product_type ) : ?>
+				<a href=<?php echo get_term_link($product_type)?>> <?php echo $product_type->name?></a>
 				<?php endforeach; wp_reset_postdata();?>
 			</div>
 	</section>
 	<section>
 		<div>
 			<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'template-parts/content', 'products' );?>
+			<?php get_template_part( 'template-parts/content', 'shop' );?>
 		</div>
 			<?php endwhile; ?>
 			<?php else : ?>
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			<?php get_template_part( 'template-parts/content', 'product' ); ?>
 			<?php endif; ?>
 	</section>
 		</main><!-- #main -->

@@ -42,3 +42,17 @@ function inhabitent_login_url()	{
 	return site_url();
 }
 add_filter( 'login_headerurl', 'inhabitent_login_url' );
+
+function get_16_post( $query ) {
+	if ( is_admin() || ! $query->is_main_query() )
+	return;
+	
+	if ( is_post_type_archive('product') || is_tax("product_type")){
+	$query->set( 'posts_per_page', 16 );
+	$query->set( 'orderby', 'title' );
+	$query->set( 'order', 'ASC' );
+    return;
+
+	}
+}
+add_action( 'pre_get_posts', 'get_16_post', 1);
