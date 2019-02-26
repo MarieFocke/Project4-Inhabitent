@@ -15,6 +15,7 @@ get_header(); ?>
                 ?>
             </header><!-- .page-header -->
             <?php /* Start the Loop */ ?>
+        <div class="tax-products">
             <?php while ( have_posts() ) : the_post(); ?>
                 <?php
                     get_template_part( 'template-parts/content','shop' );
@@ -24,6 +25,7 @@ get_header(); ?>
         <?php else : ?>
             <?php get_template_part( 'template-parts/content', 'none' ); ?>
         <?php endif; ?>
+</div>
         </main><!-- #main -->
     </div><!-- #primary -->
 <?php get_footer(); ?>
