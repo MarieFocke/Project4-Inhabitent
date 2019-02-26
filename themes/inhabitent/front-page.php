@@ -12,9 +12,6 @@ get_header(); ?>
             <div class="banner">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" />
             </div>
-			<?php while ( have_posts() ) : the_post(); ?>
-                <?php get_template_part( 'template-parts/content' ); ?>
-            <?php endwhile; ?>
         <section class="shop">
             <div class="shop-menu">
                 <?php $product_items= get_terms( 'product_type' ); ?>
@@ -22,7 +19,7 @@ get_header(); ?>
                     <div class="each-type">
                         <img src=<?php echo get_template_directory_uri().'/images/product-type-icons/' . $item->slug . '.svg' ?>>
                         <p><?php echo $item->description ?></p>
-                        <a href=<?php echo get_term_link($item)?>> <?php echo $item->nam ?> Articles</a>
+                        <a href=<?php echo get_term_link($item)?>> <?php echo $item->name ?> Stuff</a>
                     </div>
                     <?php endforeach; wp_reset_postdata();?>
             <div>

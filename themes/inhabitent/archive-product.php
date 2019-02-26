@@ -25,11 +25,9 @@ get_header(); ?>
 				<?php endforeach; wp_reset_postdata();?>
 			</div>
 	</section>
-	<section>
-		<div>
+	<section class="product-grid">
 			<?php while ( have_posts() ) : the_post(); ?>
 			<?php get_template_part( 'template-parts/content', 'shop' );?>
-		</div>
 			<?php endwhile; ?>
 			<?php else : ?>
 			<?php get_template_part( 'template-parts/content', 'product' ); ?>

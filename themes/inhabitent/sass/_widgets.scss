@@ -15,3 +15,19 @@
 .widget_search .search-submit {
 	display: none;
 }
+
+	.widget-area{
+		padding-left:20px;
+		padding-top:40px;
+		border-left: 2px solid #e1e1e1;
+		.archive-3{
+			order: 3;
+		}
+		.custom_htlm-2{
+			order:1;
+		}
+		.tent_biz_hours-2{
+			order:2;
+		}
+	}
+

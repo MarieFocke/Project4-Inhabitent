@@ -56,3 +56,4 @@ function get_16_post( $query ) {
 	}
 }
 add_action( 'pre_get_posts', 'get_16_post', 1);
+
