@@ -779,10 +779,14 @@ a {
         -ms-flex-direction: column;
             flex-direction: column; }
 
-.content-area {
+.page-id-56 .content-area,
+.blog .content-area,
+.post-template-default .content-area {
   display: grid;
   grid-template-columns: 75% 25%; }
-  .content-area .site-main {
+  .page-id-56 .content-area .site-main,
+  .blog .content-area .site-main,
+  .post-template-default .content-area .site-main {
     padding: 20px 30px 10px 120px; }
 
 /*--------------------------------------------------------------

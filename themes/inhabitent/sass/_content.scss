@@ -275,13 +275,15 @@
     }
   }
 }
-
+.page-id-56,
+.blog,
+.post-template-default{
       .content-area{
         display: grid;
         grid-template-columns: 75% 25%;
         .site-main{
-          
           padding: 20px 30px 10px 120px;
           
         }
       }
+}
