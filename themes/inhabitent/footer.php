@@ -9,12 +9,12 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="general-info">
+				<div class="general-info container2">
 				<div class="site-info">
 					<h3>Contact Info</h3>
-					<span><i class="fas fa-envelope"></i> info@inhabitent.com</span>
+					<span><a class="mail" href="mailto:info@inhabitent.com"><i class="fas fa-envelope"></i> info@inhabitent.com</a></span>
 					<br>
-					<span><i class="fas fa-phone"></i> 778-456-7891</span>
+					<span><a class="num" href="tel:7784567891"><i class="fas fa-phone"></i> 778-456-7891</a></span>
 					<br>
 					<span><i class="fab fa-facebook-square"></i>  <i class="fab fa-twitter-square"></i>  <i class="fab fa-google-plus-square"></i></span>
 				</div>

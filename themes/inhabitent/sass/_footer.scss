@@ -3,34 +3,50 @@ footer {
   color: #ffffff;
   line-height: 1.75;
   background-image: url(../../images/dark-wood.png);
-  height: 50%;
+  height: 100%;
   .general-info{
-    margin-left:150px;
-    margin-right: 150px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  h3 {
-    color: #d99054;
-    text-transform: uppercase;
+    justify-content: space-between;
+    h3 {
+      color: #d99054;
+      text-transform: uppercase;
+      font-family: Novecento Sans Web,sans-serif;
+    }
+    .site-info{
+      .mail,
+      .num{
+        color:#fff;
+        text-decoration: none;
+      }
+      .mail:hover,
+      .num:hover{
+        text-decoration: underline;
+      }
+    }
+    
+    .site-info,
+    .site-hours {
+      margin: 50px 0px;
+      span{
+        margin:30px 0px;
+      }
+    }
+    .image{
+      img{
+        width: 80%;
+        padding-top: 65px;
+      }
+    }
   }
-  .site-info,
-  .site-hours {
-    margin-right: 60px;
-  }
-  .image{
-    margin-left:70px;
-    height:200px;
-  img{
-    position: relative;
-    margin-left:100px;
-    width: 250px;
-    height:200px;
-  }
-  }
-}
 }
 .copyright {
   text-align: center;
+  font-family: Novecento Sans Web,sans-serif;
+}
+.container2 {
+  width: 1120px;
+  margin: auto;
   
 }

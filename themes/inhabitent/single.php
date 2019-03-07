@@ -32,6 +32,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
+		<?php comments_template();?>
 
         </main><!-- #main -->
         <?php get_sidebar(); ?>

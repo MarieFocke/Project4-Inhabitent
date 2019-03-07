@@ -11,6 +11,9 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
+			<header class="page-header">
+				<h1> Find us</h1>
+			</header>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				

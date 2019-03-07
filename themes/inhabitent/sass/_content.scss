@@ -63,6 +63,7 @@
           position:relative;
           .entry-title a{
             position: absolute;
+            font-family: Novecento Sans Web,sans-serif;
             top: 10%;
             left: 0%;
             color: #fff;
@@ -70,19 +71,42 @@
             padding: 10px;
             max-width: 75%;
             text-decoration: none;
-            text-align:flex-start;
             font-size: 2.1rem;
             text-transform: uppercase;
           }
           .entry-meta{
             position: absolute;
-            top:90.5%;
-            left: 30.1%;
+            font-family: Novecento Sans Web,sans-serif;
+            top:91%;
+            left: 28.1%;
             color: #fff;
             background-color: #248a83;
             padding: 5px;
-            width: 67%;
+            width: 69%;
             font-size: 1rem;
+          }
+        }
+        .entry-content{
+          
+          .social-button{
+            display: none;
+            font-family: Novecento Sans Web,sans-serif;
+          }
+          .read-all{
+          font-family: Novecento Sans Web,sans-serif;
+          font-size: 0.9rem;
+          border: 1px solid #2f1339;
+          background-color: transparent;
+          text-transform: uppercase;
+          text-decoration: none;
+          color:#404040;
+          text-align: center;
+          padding: 10px 20px;
+          }
+          .read-all:hover{
+          background-color: #248a83;
+          border-color: transparent;
+          color:#fff;
           }
         }
       }
@@ -100,6 +124,7 @@
       position:relative;
       .entry-title a{
         position: absolute;
+        font-family: Novecento Sans Web,sans-serif;
         top: 10%;
         left: 0%;
         color: #fff;
@@ -112,14 +137,137 @@
         text-transform: uppercase;
       }
       .entry-meta{
+        font-family: Novecento Sans Web,sans-serif;
         position: absolute;
-        top:90.5%;
+        top:91%;
         left: 30.1%;
         color: #fff;
         background-color: #248a83;
         padding: 5px;
         width: 67%;
         font-size: 1rem;
+      }
+    }
+    .entry-content{
+      .read-all{
+        display:none;
+      }
+      .social-button{
+        button{
+          font-family: Novecento Sans Web,sans-serif;
+          font-size: 0.9rem;
+          border: 1px solid #2f1339;
+          background-color: transparent;
+          text-transform: uppercase;
+          color:#2f1339;
+          text-align: center;
+          padding: 15px 20px;
+        }
+        button:hover {
+          background-color: #248a83;
+          border-color: transparent;
+          color:#fff;
+        }
+      }
+    }
+    .comments-area{
+      .comments-title{
+        font-size:2.1rem;
+        font-family: Novecento Sans Web,sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color:#2f1339;
+      }
+      .comment-list{
+        border-bottom: 1px solid #a1a1a1;
+        padding-bottom:10px;
+        .comment-body{
+          display:flex;
+          flex-direction:row;
+          .comment-author-avatar{
+            .avatar{
+            border-radius:30px;
+            }
+          }
+          .comment-content{
+            line-height: 1.75rem;
+            padding-left:20px;
+            font-size:1rem;
+            .comment-meta{
+              .fn{
+                color: #2f1339;
+              }
+              .comment-metadata{
+                color:#808080;
+                a{
+                  text-decoration:none;
+                  color:#248a83;
+                }
+              }
+            }
+            .reply a{
+              text-decoration:none;
+              color:#248a83;
+            }
+          }
+        }
+      }
+      .comment-respond{
+        h3{
+          font-family: Novecento Sans Web,sans-serif;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          font-size:1.8rem;
+        }
+        .comment-form{
+          .logged-in-as a{
+            color:#248a83;
+            text-decoration: none;
+          }
+          .logged-in-as a:hover{
+            color:#2f1339;
+            text-decoration: underline;
+          }
+          p{
+            color: #2f1339;
+          }
+          p input,
+          p textarea{
+            background-color: #f4f4f4;
+            border: 1px solid #e1e1e1;
+            border-radius:0px;
+          }
+          .comment-form-author,
+          .comment-form-email{
+            width:49.5%;
+            display: inline-block;
+          }
+          .comment-form-url {
+            width: 50%;
+          }
+          p label{
+            font-family: Novecento Sans Web,sans-serif;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            .required{
+              color:#d99054;
+            }
+          }
+          .form-submit input{
+            font-family: Novecento Sans Web,sans-serif;
+            font-size:0.9rem;
+            padding: 15px 25px;
+            letter-spacing: 1px;
+            margin: 5px;
+            background-color: #248a83;
+            text-transform: uppercase;
+            color: white;
+            text-decoration: none;
+          }
+          .form-submit input:hover{
+            background-color: #005752;
+          }
+        }
       }
     }
   }
@@ -141,6 +289,7 @@
         text-transform: uppercase;
         color: #2f1339;
         font-size: 2.4rem;
+        font-family: Novecento Sans Web,sans-serif;
       }
       .shop-menu {
         display: flex;
@@ -171,6 +320,7 @@
             text-transform: uppercase;
             color: white;
             text-decoration: none;
+            font-family: Novecento Sans Web,sans-serif;
           }
           a:hover {
             background-color: #005752;
@@ -186,6 +336,7 @@
           color: #2f1339;
           font-size: 2.4rem;
           margin: 50px;
+          font-family: Novecento Sans Web,sans-serif;
         }
         .list-last-articles {
           display: flex;
@@ -201,23 +352,29 @@
             border: 1px solid #a1a1a1;
             img {
               height: 250px;
+              border-bottom: 3px solid #a1a1a1;
             }
             .date-comment {
-              color: #e1e1e1;
-              padding: 5px;
+              color: #2f1339;
+              padding: 0px 10px;
               font-size: 0.75rem;
             }
-            .title {
-              color: #248a83;
-              padding: 5px;
-              font-size: 1.3rem;
+            .entry-title{
+              margin:5px 5px;
+              .title{
+                color: #248a83;
+                font-size: 1.3rem;
+                text-decoration: none;
+                font-family: Novecento Sans Web,sans-serif;
+                text-transform: uppercase;
+              }
+              .title:hover {
+                color: #2f1339;
+              }
             }
-            .title:hover {
-              color: #2f1339;
-            }
-            a {
+            .read-more{
               text-align: center;
-              margin: 5px;
+              margin: 10px 10px;
               border: 1px solid #2f1339;
               text-transform: uppercase;
               color: #2f1339;
@@ -227,8 +384,9 @@
               width: 150px;
               padding-top: 7px;
               height: 40px;
+              font-family: Novecento Sans Web,sans-serif;
             }
-            a:hover {
+            .read-more:hover {
               background-color: #248a83;
               border: 1px solid transparent;
               color: #fff;
@@ -248,6 +406,8 @@
         color: #2f1339;
         font-size: 2.4rem;
         margin: 50px;
+        font-family: Novecento Sans Web,sans-serif;
+        letter-spacing:2px;
       }
       .more {
         display: block;
@@ -261,6 +421,7 @@
         width: 200px;
         padding: 10px;
         margin: 40px 0px;
+        font-family: Novecento Sans Web,sans-serif;
       }
       .more:hover {
         background-color: #005752;
@@ -325,6 +486,7 @@
           width: 150px;
           padding: 10px;
           height: 40px;
+          font-family: Novecento Sans Web,sans-serif;
         }
         .story:hover {
           background-color: #248a83;
@@ -334,18 +496,127 @@
     }
   }
 }
-// .archive {
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   .site-content {
-//     .post {
-//       width: 400px;
-//       height: 400px;
-
-//       flex-direction: column;
-//     }
-//   }
-// }
+.date {
+  .site-content {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    .content-area {
+      .site-main {
+        padding: 20px 150px 10px 120px;
+        .page-header {
+          text-transform: uppercase;
+          font-family: Novecento Sans Web,sans-serif;
+          border-bottom: 1px solid #e1e1e1;
+          margin-bottom:20px;
+          font-size:1.2rem;
+        }
+        .entry-header{
+          position:relative;
+          .entry-title a{
+            position: absolute;
+            font-family: Novecento Sans Web,sans-serif;
+            top: 10%;
+            left: 0%;
+            color: #fff;
+            background-color: #248a83;
+            padding: 10px;
+            max-width: 75%;
+            text-decoration: none;
+            font-size: 2.1rem;
+            text-transform: uppercase;
+          }
+          .entry-meta{
+            position: absolute;
+            font-family: Novecento Sans Web,sans-serif;
+            top:91%;
+            left: 28.1%;
+            color: #fff;
+            background-color: #248a83;
+            padding: 5px;
+            width: 69%;
+            font-size: 1rem;
+          }
+        }
+        .entry-content{
+          
+          .social-button{
+            display: none;
+            font-family: Novecento Sans Web,sans-serif;
+          }
+          .read-all{
+          font-family: Novecento Sans Web,sans-serif;
+          font-size: 0.9rem;
+          border: 1px solid #2f1339;
+          background-color: transparent;
+          text-transform: uppercase;
+          text-decoration: none;
+          color:#2f1339;
+          text-align: center;
+          padding: 10px 20px;
+          }
+          .read-all:hover{
+          background-color: #248a83;
+          border-color: transparent;
+          color:#fff;
+          }
+        }
+      }
+    }
+  }
+}
+.search{
+  .site-content {
+    .content-area {
+      display: grid;
+    grid-template-columns: 75% 25%;
+      .site-main {
+        padding: 20px 150px 100px 120px;
+        .page-header {
+          text-transform: uppercase;
+          font-family: Novecento Sans Web,sans-serif;
+          border-bottom: 1px solid #e1e1e1;
+          margin-bottom:20px;
+          font-size:1.6rem;
+        }
+        .post-56{
+          .entry-summary{
+            .read-search{
+              display: none;
+            }
+          }
+        }
+        .entry-header{
+          .entry-title a{
+            color: #248a83;
+            padding: 10px;
+            text-decoration: none;
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-family: Novecento Sans Web,sans-serif;
+          }
+        }
+        .entry-summary{
+          .read-search{
+            font-family: Novecento Sans Web,sans-serif;
+            font-size: 0.9rem;
+            border: 1px solid #2f1339;
+            background-color: transparent;
+            text-transform: uppercase;
+            text-decoration: none;
+            color:#2f1339;
+            text-align: center;
+            padding: 10px 20px;
+            }
+            .read-search:hover{
+            background-color: #248a83;
+            border-color: transparent;
+            color:#fff;
+            }
+        }
+      }
+    }
+  }
+}
 .post-type-archive {
   .site-content {
     .content-area {
@@ -353,10 +624,13 @@
         .page-header {
           text-align: center;
           text-transform: uppercase;
+          font-family: Novecento Sans Web,sans-serif;
         }
         .products {
           text-align: center;
           padding: 5px;
+          font-family: Novecento Sans Web,sans-serif;
+          font-size:1.2rem;
         }
         .products div a {
           text-decoration: none;
@@ -400,7 +674,6 @@
                 padding-right:0.1rem;
                 background: white;
                 display: inline;
-        
               }
               span {
                 font-size: 0.9rem;
@@ -425,9 +698,10 @@
       .page-header {
         padding: 20px;
         text-align: center;
-        color: #404040;
+        color: #2f1339;
           .page-title {
             text-transform: uppercase;
+            font-family: Novecento Sans Web,sans-serif;
           }
       }
       .tax-products {
@@ -437,7 +711,7 @@
         padding-top:30px;
         display: flex;
         border-top: 1px dashed #a1a1a1;
-        color: #404040;
+        color: #2f1339;
           .product {
             margin: 10px;
             height: 300px;
@@ -492,35 +766,38 @@
         flex:1;
       }
       .entry-content{
-        margin:20px;
+        padding:0px 30px 0px 10px;
         flex:1;
         .entry-title {
           text-decoration: none;
+          text-transform: uppercase;
           color: #d99054;
           font-size: 2.4rem;
-          margin-bottom: 20px;
+          font-family: Novecento Sans Web,sans-serif;
         }
         .price{
           font-size:1.8rem;
           text-transform: uppercase;
-          margin-bottom: 20px;
+          margin-bottom: 10px;
+          font-family: Novecento Sans Web,sans-serif;
         }
         .EN-US{
           display: flex;
           flex-wrap: wrap;
           font-size:1rem;
           line-height: 1.75rem;
-          margin: 20px 30px;
+          margin: 5px 30px;
         }
         .social-button{
           button{
             font-size: 0.9rem;
-            border: 1px solid #404040;
+            border: 1px solid #2f1339;
             background-color: transparent;
             text-transform: uppercase;
-            color:#404040;
+            color:#2f1339;
             text-align: center;
             padding: 15px 20px;
+            font-family: Novecento Sans Web,sans-serif;
           }
           button:hover {
             background-color: #248a83;
@@ -544,12 +821,50 @@
   }
 }
 .page-id-56{
-  .post-56{
-    .entry-content{
-      .h3{
-        color: #2f1339;
-        font-size: 2.1rem;
-        margin-bottom: 1.5rem;
+  .site-main{
+    .page-header h1{
+      font-family: Novecento Sans Web,sans-serif;
+      text-transform:uppercase;
+      font-size:2.4rem;
+    }
+    .post-56{
+      .entry-content{
+        h2{
+          color: #2f1339;
+          font-size: 2.1rem;
+          font-family: Novecento Sans Web,sans-serif;
+          text-transform: uppercase;
+        }
+        .wpcf7-form{
+          p label{
+            text-transform: uppercase; 
+            font-family: Novecento Sans Web,sans-serif;
+            font-size: 1.1rem;
+            span{
+              color: #d99054;
+            }
+            textarea,
+            input{
+              border-radius: 0;
+              border: 1px solid #e1e1e1;
+              background-color: #f4f4f4;
+            }
+          }
+          p .wpcf7-submit{
+            font-family: Novecento Sans Web,sans-serif;
+            font-size:0.9rem;
+            padding: 15px 25px;
+            letter-spacing: 1px;
+            margin: 5px;
+            background-color: #248a83;
+            text-transform: uppercase;
+            color: white;
+            text-decoration: none;
+          }
+          p .wpcf7-submit:hover{
+            background-color: #005752;
+          }
+        }
       }
     }
   }
@@ -558,12 +873,13 @@
   .post-54{
     .entry-header{
       width:auto;
-      height: 500px;
+      height: 100vh;
       position:relative;
       .entry-title{
         color:white;
         font-size:3rem;
         text-transform: uppercase;
+        font-family: Novecento Sans Web,sans-serif;
       }
     }
     h2{
@@ -571,23 +887,118 @@
       color: #2f1339;
       text-transform: uppercase;
       font-size:2.1rem;
+      font-family: Novecento Sans Web,sans-serif;
     }
     p{
       margin-left: auto;
-    margin-right: auto;
-    max-width: 800px;
-      font-size:1.5rem;
+      margin-right: auto;
+      font-size:1rem;
+      max-width: 800px;
       line-height:1.75;
     }
   }
 }
-// position: absolute;
-//     top: 28.5%;
-//     left: 9.7%;
-//     color: #fff;
-//     background-color: #248a83;
-//     padding: 5px;
-//     width: 35%;
-//     text-decoration: none;
-//     font-size: 2.1rem;
-//     text-transform: uppercase;
+.widget-area{
+  .widget-title{
+    font-size:1.5rem;
+    font-family: Novecento Sans Web,sans-serif;
+    text-transform:uppercase;
+  }
+  .widget_text{
+    line-height: 1.75;
+    .textwidget a{
+      text-decoration:none;
+      color:#248a83;
+    }
+    .textwidget a:hover{
+      color:#2f1339;
+    } 
+  }
+  .widget_archive{
+    ul li{
+    list-style-type: none;
+      a{
+        text-decoration: none;
+        color:#248a83;
+      }
+      a:hover{
+        color:#2f1339;
+      }
+    }
+  }
+}
+.error404{
+  .site-content {
+    .content-area {
+      .site-main{
+        display: grid;
+        grid-template-columns: 75% 25%;
+        .error-404{
+          padding: 20px 150px 100px 120px;
+          .page-header {
+            text-transform: uppercase;
+            font-family: Novecento Sans Web,sans-serif;
+            margin-bottom:20px;
+            font-size:1.6rem;
+            color:#2f1339;
+          }
+          
+          .page-content{
+            .search-form{
+              span{
+                display: none;
+              }
+              .search-field{
+                border-radius: 0px;
+                border: 1px solid #e1e1e1;
+                background-color: #f4f4f4;
+
+              }
+            }
+            .widget_recent_entries{
+              line-height: 1.75;
+              margin-bottom: 30px;
+              h2{
+                font-family: Novecento Sans Web,sans-serif;
+                text-transform: uppercase;
+                color:#2f1339;
+              }
+              ul li{
+                list-style-type: none;
+                  a{
+                    text-decoration: none;
+                    color:#248a83;
+                  }
+              }
+            }
+            .widget_categories{
+              line-height: 1.75;
+              margin-bottom: 30px;
+              h2{
+                font-family: Novecento Sans Web,sans-serif;
+                text-transform: uppercase;
+                color:#2f1339;
+              }
+              ul li{
+                list-style-type: none;
+                  a{
+                    text-decoration: none;
+                    color:#248a83;
+                  }
+              }
+            }
+            .widget_archive{
+              line-height: 1.75;
+              margin-bottom: 30px;
+              h2{
+                font-family: Novecento Sans Web,sans-serif;
+                text-transform: uppercase;
+                color:#2f1339;
+              }
+            }
+           }
+          }
+      }
+    }
+  }
+}

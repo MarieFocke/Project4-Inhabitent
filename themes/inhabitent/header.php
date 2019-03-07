@@ -31,12 +31,14 @@
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</div><!-- .site-branding -->
-				<nav id="site-navigation" class="main-navigation" >
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<div class="search">
-						<?php get_search_form(); ?>
-					</div>
-				</nav><!-- #site-navigation -->
+				<div class="nav">
+					<nav id="site-navigation" class="main-navigation" >
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+						<div class="search">
+							<?php get_search_form(); ?>
+						</div>
+					</nav><!-- #site-navigation -->
+				</div>
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">

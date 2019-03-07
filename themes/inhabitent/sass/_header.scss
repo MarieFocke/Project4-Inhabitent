@@ -1,63 +1,69 @@
 .home,
 .page-template-about{
   .site-header {
+    margin-top:10px;
     display: flex;
     flex-direction: row;
     background-color: transparent;
     width:1225px;
     border:none;
+    justify-content:space-between;
     position: absolute;
     z-index: 999;
     .logo-image{
-      width: 70px;
-      margin-left: 100px;
-      margin-right: 100px;
+      width: 50px;
+      margin-left: 20px;
       .image{
         height: auto;
         max-width: 100%;
       }
     }
-    .main-navigation{
-    .search{
-      border-color: transparent;
-        i{
-          color:white;
-          text-shadow: 1px 1px #000;
-        }
-        .search-field{
-          border: none;
-          display: none;
-          background-color: transparent;
-          color:#fff;
-          text-shadow: 2px 2px #000;
+    .nav{
+      .main-navigation{
+        display:inline-block;
+        font-family: Novecento Sans Web,sans-serif;
+      .search{
+        border-color: transparent;
+          i{
+            color:white;
+            text-shadow: 1px 1px #000;
           }
-      }
-      .menu-menu-1-container li a{
-        text-transform: uppercase;
-        color:white;
-        padding:5px;
-        text-shadow: 2px 2px black; 
+          .search-field{
+            border: none;
+            display: none;
+            background-color: transparent;
+            color:#fff;
+            text-shadow: 2px 2px #000;
+            }
+        }
+        .menu-menu-1-container li a{
+          text-transform: uppercase;
+          color:white;
+          padding:5px;
+          text-shadow: 2px 2px black; 
+        }
       }
     }
   }
 }
 
     .site-header {
-      border-bottom: 1px solid gray;
+      border-bottom: 1px solid #e1e1e1;
+      background-color: hsla(0,0%,100%,.85);
       display: flex;
       flex-direction: row;
       background-color: transparent;
-      justify-items: space-between;
+      justify-content: space-between;
       .logo-image{
-        width: 70px;
-        margin-left: 100px;
-        margin-right: 100px;
+        width: 50px;
+        margin-left: 20px;
         .image{
           height: auto;
           max-width: 100%;
         }
       }
       .main-navigation{
+      font-family: Novecento Sans Web,sans-serif;
       .search{
         border-color: transparent;
         i{

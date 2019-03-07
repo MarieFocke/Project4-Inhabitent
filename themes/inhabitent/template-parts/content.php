@@ -24,5 +24,11 @@
 
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
+		<a class="read-all" href="<?php the_permalink(); ?>">Read More &rarr;</a>
+		<div class="social-button">
+			<button class="facebook"><i class="fab fa-facebook-f"></i> Like</button>
+			<button class="tweeter"><i class="fab fa-twitter"></i> Tweet</button>
+			<button class="pintrest"><i class="fab fa-pinterest"></i> Pin</button>
+		</div>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

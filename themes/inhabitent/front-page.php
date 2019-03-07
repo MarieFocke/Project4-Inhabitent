@@ -37,8 +37,8 @@ get_header(); ?>
                         <?php endif; ?>
                         <span class="date-comment"><?php the_date(); ?> / <?php echo comments_number(); ?></span>
                         <br>
-                        <span class="title"><?php the_title();?></span>
-                        <a href="<?php the_permalink(); ?>">Read Entry</a>
+                        <?php the_title(sprintf('<h2 class="entry-title"><a class="title" href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
+                        <a class="read-more" href="<?php the_permalink(); ?>">Read Entry</a>
                         <?php endforeach; wp_reset_postdata();?>
                     </li>
                 </ul>
