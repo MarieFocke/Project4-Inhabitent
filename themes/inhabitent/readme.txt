@@ -1,38 +1,66 @@
-=== RED Starter Theme ===
+# Inhabitent: Project 4
+##Description
+Inhabitent is a website made for the people that love hiking or simply spending time in the nature.
+Its main use is bying online materials and equipement relatited to this sport. 
+You may even let a comment about the stuff that you texted.
+In addition, you have also acces to nice articles and funny stories in the journal.
+There is also a page "About" were we explain how we are and a possibility to contact us via mail on the "Find us" page.
+##Support
+If you need any help look at the sidebar on the Journal pages, the Find us page or on the Footer. You can contact us via email and phone call.
+## Installation
 
-Contributors: automattic
-Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
+### 1. Download me (don't clone me!)
 
-Requires at least: 4.0
-Tested up to: 4.2.2
-Stable tag: 1.0.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Then add me to your `wp-content` directory.
 
-A starter theme called RED Starter Theme, or underscores.
+### 2. Rename the `redstarter-master` directory
 
-== Description ==
+Make sure that the theme directory name is project appropriate!
 
-Hi. I'm a starter theme called RED Starter Theme, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+### 3. Install the dev dependencies
 
-== Installation ==
-	
-1. In your admin panel, go to Appearance > Themes and click the Add New button.
-2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
-3. Click Activate to use your new theme right away.
+Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
 
-== Frequently Asked Questions ==
+### 4. Update the proxy in `gulpfile.js`
 
-= Does this theme support any plugins? =
+Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
 
-RED Starter Theme includes support for Infinite Scroll in Jetpack.
+## Main Tools used
 
-== Changelog ==
+-html/php
+-css/sass
+-javascript/jquery
+-wordpress
+## Intresting things learned
+###search button
+```bash
+$( "div.foo" ).toggleClass(function() {
+  if ( $( this ).parent().is( ".bar" ) ) {
+    return "happy";
+  } else {
+    return "sad";
+  }
+});
+//http://api.jquery.com/toggleclass/
+```
+###function change color logo on certain page
+```bash
+    <div class="logo-image">
+		<?php if(is_page('about')||is_front_page()){?>
+				<a href="<?php bloginfo('url');?>"><img class="image" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg"  alt="banner image"/></a>
+		<?php }else{ ?>
+				<a href="<?php bloginfo('url'); ?>"><img class="image" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg"  alt="banner image"/></a>
+		<?php } ?>
+	</div>
+```
+### enqueuing
+```bash
+wp_enqueue_script( 'original_name', get_template_directory_uri() . '/right_adress.js', array(), '20151215', true );
+```
+##Roadmap
+If I had some extra time I would correct the header(not totally fix) and look at the small syntax error that appear on the search page.
 
-= 1.0 - May 12 2015 =
-* Initial release
-
-== Credits ==
-
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
 * Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2015 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
