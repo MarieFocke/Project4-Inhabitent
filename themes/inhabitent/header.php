@@ -23,9 +23,9 @@
 			<header id="masthead" class="site-header container">
 				<div class="logo-image">
 					<?php if(is_page('about')||is_front_page()){?>
-						<a href="<?php bloginfo('url'); ?>"><img class="image"src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg"  alt="banner image"/></a>
+						<a href="<?php bloginfo('url');?>"><img class="image" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg"  alt="banner image"/></a>
 						<?php }else{ ?>
-					<a href="<?php bloginfo('url'); ?>"><img class="image"src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg"  alt="banner image"/></a>
+					<a href="<?php bloginfo('url'); ?>"><img class="image" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg"  alt="banner image"/></a>
 					<?php } ?>
 				</div>
 				<div class="site-branding">
