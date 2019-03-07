@@ -12,12 +12,10 @@
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
-
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
-	<span><?php echo CFS()->get('product-price'); ?></span>
-	
 	<div class="entry-content">
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<span class="price"><?php echo CFS()->get('product_price'); ?></span>
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
@@ -25,6 +23,11 @@
 				'after'  => '</div>',
 			) );
 		?>
+		<div class="social-button">
+			<button class="facebook"><i class="fab fa-facebook-f"></i> Like</button>
+			<button class="tweeter"><i class="fab fa-twitter"></i> Tweet</button>
+			<button class="pintrest"><i class="fab fa-pinterest"></i> Pin</button>
+		</div>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

@@ -1,26 +1,41 @@
-.home{
+.home,
+.page-template-about{
   .site-header {
     display: flex;
-    position: absolute;
-    padding: 10px 0px;
+    flex-direction: row;
     background-color: transparent;
-    width: 1400px;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: transparent;
+    width:1225px;
+    border:none;
+    position: absolute;
+    z-index: 999;
     .logo-image{
-      width: 90px;
-      margin: 0px 350px;
+      width: 70px;
+      margin-left: 100px;
+      margin-right: 100px;
+      .image{
+        height: auto;
+        max-width: 100%;
+      }
     }
     .main-navigation{
-      .search{
-        
-        border-color: transparent;
+    .search{
+      border-color: transparent;
+        i{
+          color:white;
+          text-shadow: 1px 1px #000;
+        }
+        .search-field{
+          border: none;
+          display: none;
+          background-color: transparent;
+          color:#fff;
+          text-shadow: 2px 2px #000;
+          }
       }
       .menu-menu-1-container li a{
         text-transform: uppercase;
         color:white;
-        padding:10px;
+        padding:5px;
         text-shadow: 2px 2px black; 
       }
     }
@@ -31,19 +46,27 @@
       border-bottom: 1px solid gray;
       display: flex;
       flex-direction: row;
-      padding: 10px 0px;
       background-color: transparent;
       justify-items: space-between;
       .logo-image{
         width: 70px;
         margin-left: 100px;
         margin-right: 100px;
+        .image{
+          height: auto;
+          max-width: 100%;
+        }
       }
       .main-navigation{
       .search{
         border-color: transparent;
+        i{
+          color:#248A83;
+        }
+
         .search-field{
           border: none;
+          display:none;
         }
       }
       .menu-menu-1-container li a{
